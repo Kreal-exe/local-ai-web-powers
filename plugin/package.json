@@ -1,0 +1,24 @@
+{
+  "name": "local-ai-web-powers",
+  "version": "1.0.0",
+  "description": "Web search, page reading (JavaScript sites, PDF, YouTube) and deep research for ANY local model in LM Studio. Fully local, no API keys, no tool calling needed.",
+  "scripts": {
+    "dev": "lms dev",
+    "push": "lms push",
+    "test": "npx --yes esbuild@0.24.0 test/unit.test.ts --bundle --platform=node --format=cjs --packages=external --outfile=.test-build/unit.test.cjs --log-level=warning && node --test .test-build/unit.test.cjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@lmstudio/sdk": "2.1.0",
+    "zod": "3.24.1",
+    "@searxng-js/searxng": "0.1.3",
+    "defuddle": "0.19.6",
+    "linkedom": "0.18.14",
+    "pdfjs-dist": "6.4.299",
+    "playwright-core": "1.64.1",
+    "undici": "7.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8"
+  }
+}

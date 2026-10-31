@@ -1,0 +1,4 @@
+.lmstudio
+node_modules
+.test
+.test-build
